@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class HelloWorld {
+    
+    public void add(){
+        //no return withoth argument
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a: ");
+        int a=in.nextInt();
+          System.out.println("Enter b: ");
+        int b=in.nextInt();
+        System.out.println("Additiom:"+(a+b));
+    }
+    public void sub(int x,int y){
+       
+        System.out.println("Subtraction :"+(x-y));
+    }
+    
+    //return without args
+    public int mul(){
+       int r=3;
+       int s=4;
+        return r*s;
+    }
+    
+    public float div(int x,int y){
+        return(x/y);
+    }
+//Recursion methods
+    public int factorial(int n){
+        if(n==1)
+           return 1;
+         else
+           return(n*factorial(n-1));
+           
+    }
+    public static void main(String[] args) {
+        HelloWorld o=new HelloWorld();
+        o.add();
+        o.sub(2,3);
+        //o.mul();
+        System.out.println("multi"+ o.mul());
+        System.out.println("diveion"+o.div(3,8));
+        System.out.println("fact"+o.factorial(5));
+    }
+}
+
+
+
+
+//output
+/*
+Enter a: 
+6
+Enter b: 
+7
+Additiom: 13
+Subtraction :-1
+multi: 12
+diveion: 0.0
+fact : 120
+*/
