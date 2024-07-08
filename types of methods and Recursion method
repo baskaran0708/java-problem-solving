@@ -10,6 +10,7 @@ class HelloWorld {
         int b=in.nextInt();
         System.out.println("Additiom:"+(a+b));
     }
+    //no return within arguments
     public void sub(int x,int y){
        
         System.out.println("Subtraction :"+(x-y));
@@ -22,6 +23,7 @@ class HelloWorld {
         return r*s;
     }
     
+    //return within args
     public float div(int x,int y){
         return(x/y);
     }
