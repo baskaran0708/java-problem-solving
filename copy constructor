@@ -1,0 +1,51 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    private int real,img;
+    //default constructor
+    public HelloWorld(){
+        this.real=5;
+        this.img=2;
+    }
+//parameterized constructor
+    public HelloWorld(int x,int y){
+        this.real=x;
+        this.img=y;
+    }
+//Copy constructor
+    public HelloWorld(HelloWorld o1){
+        this.real=o1.real;
+        this.img=o1.img;
+    }
+    public String toString(){
+        return "("+ real + "+" + img +"i)";
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        HelloWorld o=new HelloWorld ();
+        System.out.println("objext:"+o.toString());
+        HelloWorld o1 =new HelloWorld(3,7);
+        System.out.println("object:"+o1.toString());
+      //copy constructor calling
+         HelloWorld o2 =new HelloWorld(o1);
+        System.out.println("object:"+o2.toString());
+        
+        
+    }
+}
+
+
+
+
+
+
+/*
+Try programiz.pro
+objext:(5+2i)
+object:(3+7i)
+object:(3+7i)
+
+=== Code Execution Successful ===
+*/
