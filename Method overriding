@@ -1,0 +1,51 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class user {
+     String name;
+     int age;
+     user(String n,int a){
+         this.name=n;
+         this.age=a;
+     }
+     public void print(){
+         System.out.println("Name:"+name);
+         System.out.println("Age:"+age);
+     }
+}
+     class max extends user{
+           String company;
+         max(String name,int age,String comp){
+             super(name,age);
+             this.company=comp;
+         }
+         //method overriding
+         public void print(){
+             System.out.println("Name:"+name);
+             System.out.println("Age:"+age);
+             System.out.println("company:"+company);
+         }
+     }
+     
+    public class main{
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        max ob = new max("baskar",21,"shiash");
+        ob.print();
+    }
+}
+
+
+
+
+
+
+
+
+
+/*output:
+Try programiz.pro
+Name:baskar
+Age:21
+company:shiash
+*/
