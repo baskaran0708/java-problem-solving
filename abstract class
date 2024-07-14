@@ -20,3 +20,42 @@ public class main{
         
     }
 }
+//Example: 2
+abstract class mobile{
+   abstract void camera();
+   abstract void touch();
+    void voicedef(){
+        System.out.println("yo can make a call");
+    }
+}
+class realme extends mobile{
+    void camera(){
+        System.out.println("its provide better camera");
+    }
+    //over ride
+    void touch(){
+        System.out.println("it provide amolad display");
+    }
+    
+}
+class poco extends mobile{
+    void camera(){
+        System.out.println("its provide 200mpx camera");
+    }
+    void touch(){
+        System.out.println("its provide indisplay fingerprint");
+    }
+}
+public class main{
+    public static void main(String args[]){
+        poco obj=new poco();
+        obj.camera();
+        obj.touch();
+        realme obj1=new realme();
+        obj1.camera();
+        obj1.touch();
+        
+        
+        
+    }
+}
