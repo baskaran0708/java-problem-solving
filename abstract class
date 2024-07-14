@@ -1,0 +1,22 @@
+abstract class shape{
+   abstract void draw();
+    void mess(){
+        System.out.println("Message from Shape");
+    }
+}
+class react extends shape{
+//over ride
+    void draw(){
+        System.out.println("draw a reactange shape");
+    }
+    
+}
+public class main{
+    public static void main(String args[]){
+        react obj=new react();
+        obj.draw();
+        obj.mess();
+        
+        
+    }
+}
