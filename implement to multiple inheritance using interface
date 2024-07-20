@@ -1,0 +1,53 @@
+class phone{
+    public void voice(){
+        System.out.println("make voice call");
+    }
+    public void sms(){
+        System.out.println("send to messege");
+    }
+        public static void main(String args[]){
+        smartphone o=new smartphone();
+        o.voice();
+        o.sms();
+        o.click();
+        o.record();
+        o.pause();
+        o.stop();
+        
+    }
+}
+
+interface camera{
+    void click();
+    void record();
+}
+interface player{
+    void pause();
+    void stop();
+}
+class smartphone extends phone implements camera,player{
+   public void click(){
+        System.out.println("click on the camera");
+        
+    }
+   public void record(){
+        System.out.println("record the video");
+        
+    }
+   public void pause(){
+        System.out.println("pause the music");
+    }
+   public void stop(){
+        System.out.println("stop the music");
+    }
+}
+
+
+/*ake voice call
+send to messege
+click on the camera
+record the video
+pause the music
+stop the music
+
+=== Code Execution Successful ===*/
