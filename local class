@@ -1,0 +1,18 @@
+class outer{
+    void display(){
+        class inner{//local class
+            void innerdis(){
+                System.out.println("its inner display method ");
+            }
+        }
+            inner o=new inner();
+            o.innerdis();//its call to inner class method
+        
+    }
+}
+public class localclass{
+    public static void main(String args[]){
+        outer obj=new outer();
+        obj.display();//call to outer class method
+    }
+}
