@@ -1,0 +1,33 @@
+class outer{
+    int a=15;
+    class iner{
+        int b=99;
+        void inerdisplay(){
+            System.out.println("A:"+a);
+            System.out.println("B:"+b);
+        }
+    
+        
+    }
+    void outersdisplay(){
+        iner o=new iner();
+        o.inerdisplay();
+        System.out.println("B from ineer class:"+o.b);
+    }
+}
+public class nestedclass{
+    public static void main(String args[]){
+        outer op=new outer();
+        op.outersdisplay();
+        outer.iner oi=new outer().new iner();//call two class in single object
+        oi.inerdisplay();
+        
+    }
+}
+
+/*output:
+A:15
+B:99
+B from ineer class:99
+A:15
+B:99
