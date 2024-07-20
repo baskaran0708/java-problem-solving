@@ -1,0 +1,29 @@
+interface animal{//interface just like class
+    void sound();//not used for abstract keyword in interface
+    void sleep();//it automatically consider abstract method
+}
+class dog implements animal{//its only way to achive multiple inheritance
+    
+    
+    //override
+    public void sound(){
+        System.out.println("the dog sounds like:woof");
+    }
+    //override
+    public void sleep(){
+        System.out.println("Dog is sleeping");
+    }
+    
+}
+public class interfaces{
+    public static void main(String args[]){
+     dog obj=new dog();
+     obj.sound();
+     obj.sleep();
+}
+}
+/*output:
+the dog sounds like:woof
+Dog is sleeping
+
+=== Code Execution Successful =*/
