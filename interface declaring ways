@@ -1,0 +1,37 @@
+interface demo{
+    final static int a=25;
+    public abstract void fun1();
+    void fun2();
+    public static void fun3(){
+        System.out.println("just for fun");
+    
+    }
+    default void fun4(){
+        System.out.println("itd default method ");
+    }
+    
+}
+interface dem1 extends demo{
+    void fun5();
+}
+class test implements dem1{
+    public void fun1(){
+        System.out.println("its fun 1");
+    }
+    public void fun2(){
+        System.out.println("its fun 2");
+    }
+    public void fun5(){
+        System.out.println("its fun 5");
+    }
+    public static void main(String args[]){
+            System.out.println("a:"+demo.a);
+            demo.fun3();
+            test oj=new test();
+            oj.fun1();
+            oj.fun2();
+            oj.fun4();
+            oj.fun5();
+        }
+    
+}
