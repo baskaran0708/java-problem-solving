@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Enter the limit");
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int sum=0;
+        for(int i=1;i<=n;i++){
+            System.out.println("enter the subject"+i);
+            int a=in.nextInt();
+            sum=sum+a;
+            
+        }
+        System.out.println("sum of valu"+sum);
+        System.out.println("averae of valu"+sum/n);
+      
+    }
+}
